@@ -1,5 +1,23 @@
-data:
-  env: localhost-dev-edit888
-  user:
-    username: fengzheng-dev999
-    password: password-dev
+spring:
+  profiles: dev
+  application:
+    name: config-single-client
+  cloud:
+    config:
+      label: master   #  仓库分支
+      profile: dev
+      uri: http://localhost:8888/  #指明配置服务中心的网址。
+
+server:
+  port: 8881
+  #dev开发环境配置文件
+  #test测试环境
+  #pro正式环境
+management:
+  endpoint:
+    shutdown:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
