@@ -1,5 +1,10 @@
+server:
+  port: 8889
+
+
 spring:
-  profiles: dev
+  profiles:
+    active: dev
   application:
     name: config-single-client
   cloud:
@@ -7,9 +12,6 @@ spring:
       label: master   #  仓库分支
       profile: dev
       uri: http://localhost:8888/  #指明配置服务中心的网址。
-
-server:
-  port: 8881
   #dev开发环境配置文件
   #test测试环境
   #pro正式环境
