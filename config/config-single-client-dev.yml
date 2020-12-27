@@ -28,4 +28,4 @@ data:
   env: config-eureka-dev
   user:
     username: eureka-client-user
-    password: 12910291020000
+    password: 1291
