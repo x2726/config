@@ -15,14 +15,7 @@ spring:
   #dev开发环境配置文件
   #test测试环境
   #pro正式环境
-management:
-  endpoint:
-    shutdown:
-      enabled: false
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+
 
 data:
   env: config-eureka-dev
